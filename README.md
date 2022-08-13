@@ -11,7 +11,18 @@
 ## 如何開始
 
 - 安裝 nodejs v14 以上的版本
-- 安裝依賴套件 `pnpm i`
+
+- 使用 npx 安裝此模板
+
+```
+npx degit ServiceKiitzu/next-starter
+```
+
+- 安裝依賴套件
+
+```
+pnpm i
+```
 
 啟動開發 server
 
