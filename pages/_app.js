@@ -2,7 +2,7 @@ import "@/styles/globals.scss";
 import Layout from "@/layouts/Layout";
 import Head from "next/head";
 import { Provider } from "react-redux";
-import store from "@/src/store";
+import store from "@/src/app/store";
 
 function MyApp({ Component, pageProps }) {
   return (
