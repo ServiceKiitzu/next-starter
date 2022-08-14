@@ -15,7 +15,7 @@
 - 使用 npx 安裝此模板
 
 ```
-npx degit ServiceKiitzu/next-starter
+npx degit ServiceKiitzu/next-starter your-project-name
 ```
 
 - 安裝依賴套件
