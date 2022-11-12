@@ -1,6 +1,6 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import { createLogger } from "redux-logger";
-import helloSlice from "./features/hello/helloSlice";
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { createLogger } from 'redux-logger';
+import helloSlice from './features/hello/helloSlice';
 
 const logger = createLogger();
 
