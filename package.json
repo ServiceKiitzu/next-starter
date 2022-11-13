@@ -9,7 +9,7 @@
 		"cache-clean": "rm -rf ./.next",
 		"lint": "next lint",
 		"lint:fix": "next lint --fix",
-		"postinstall": "husky install",
+		"postinstall": "git init && husky install",
 		"format": "prettier --write",
 		"component:create": "babel-node commands/component/create",
 		"commit": "cz"
