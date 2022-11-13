@@ -17,7 +17,7 @@ echo 'please be patient, this may take a while...'
 # echo "✅  No TypeError found"
 echo "🔎  Running linter.."
 
-pnpm lint || (
+npm lint || (
     echo '⛔️  There is a problem in the code. Check linter, add changes and try commit again. ⛔️';
     false;
     )
@@ -25,4 +25,4 @@ pnpm lint || (
 echo '✅ No Eslint error found'
 echo '⌛️ Running lint staged and git commit ⌛️'
 
-pnpx mrm@2 lint-staged
+npx mrm@2 lint-staged
