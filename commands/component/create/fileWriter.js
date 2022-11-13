@@ -1,5 +1,5 @@
-const fs = require("fs");
-  const path = require('path');
+const fs = require('fs');
+const path = require('path');
 const colors = require('colors');
 const { genComponentContent, genStyleContent } = require('./contentGenerator');
 
