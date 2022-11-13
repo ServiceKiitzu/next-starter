@@ -25,4 +25,4 @@ pnpm lint || (
 echo '✅ No Eslint error found'
 echo '⌛️ Running lint staged and git commit ⌛️'
 
-pnpx lint-staged
+pnpx mrm@2 lint-staged

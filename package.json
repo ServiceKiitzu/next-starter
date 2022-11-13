@@ -9,6 +9,7 @@
     "cache-clean": "rm -rf ./.next",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "prepare": "husky install",
     "postinstall": "husky install",
     "prettier": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
     "format": "prettier --w \"./**/*.{ts,tsx,css,js,jsx,json}\"",
