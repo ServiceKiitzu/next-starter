@@ -11,7 +11,7 @@
 		"lint:fix": "next lint --fix",
 		"postinstall": "husky install",
 		"prettier": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
-		"format": "prettier --w \"./**/*.{ts,tsx,css,js,jsx,json}\"",
+		"format": "prettier \"**/*.{js,jsx,ts,tsx,css,json}\" --write",
 		"component:create": "babel-node commands/component/create",
 		"commit": "cz"
 	},
@@ -38,7 +38,7 @@
 	},
 	"lint-staged": {
 		"**/*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
+			"eslint",
 			"pnpm format"
 		]
 	}
