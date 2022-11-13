@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "cache-clean": "rm -rf ./.next",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "postinstall": "husky install",
     "prettier": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
-    "component:create": "babel-node commands/component/create"
+    "format": "prettier --w \"./**/*.{ts,tsx,css,js,jsx,json}\"",
+    "component:create": "babel-node commands/component/create",
+    "commit": "cz"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
@@ -33,8 +38,8 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
-      "pnpm prettier",
-      "eslint"
+      "pnpm lint:fix",
+      "pnpm format"
     ]
   }
 }
