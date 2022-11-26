@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
+const withLinaria = require('next-linaria');
+
+module.exports = withLinaria({
+	linaria: {
+		/* linaria options here */
+	},
+});
 
 const nextConfig = {
 	images: {
