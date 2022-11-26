@@ -17,6 +17,9 @@ jobs:
         run: |
           pnpm i
           pnpm build
+      - name: pnpm setup
+        run: |
+          pnpm setup
       - name: run lighthouse-ci
         run: |
           pnpm install -g @lhci/cli@0.3.x
