@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
 		<Provider store={store}>
 			<Layout>
 				<Head>
+					<title>豈止數位設計</title>
 					<link rel="shortcut icon" href="/favicon.ico" />
 				</Head>
 				<Component {...pageProps} />
