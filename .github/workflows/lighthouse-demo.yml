@@ -9,10 +9,13 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 18.x
+      - name: pnpm init
+        run: |
+          npm i -g pnpm
       - name: pnpm install, build
         run: |
-          pnpm install
+          pnpm i
           pnpm build
       - name: run lighthouse-ci
         run: |
